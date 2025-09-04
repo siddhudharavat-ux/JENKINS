@@ -1,0 +1,12 @@
+def fibonacci(n):
+    fib_sequence = [0, 1]
+    while len(fib_sequence) < n:
+        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+    return fib_sequence
+
+# Number of terms you want in the Fibonacci series
+n_terms = 10
+fibonacci_series = fibonacci(n_terms)
+
+print(f"The first {n_terms} terms of the Fibonacci series are:")
+print(fibonacci_series)
